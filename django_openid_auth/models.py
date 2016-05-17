@@ -56,7 +56,7 @@ class Association(models.Model):
 
 
 class UserOpenID(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, db_constraint=False)
     claimed_id = models.TextField(max_length=2047, unique=True)
     display_id = models.TextField(max_length=2047)
 
