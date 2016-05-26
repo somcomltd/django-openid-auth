@@ -5,4 +5,5 @@ include README.txt
 include TODO.txt
 
 recursive-include django_openid_auth/templates *.html
+recursive-include django_openid_auth/migrations *.py
 recursive-include example_consumer *.py
